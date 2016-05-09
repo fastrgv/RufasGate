@@ -2,9 +2,28 @@
 Highly portable Stargate fantasy puzzle written in C++ for Mac OS-X and GNU-Linux
 
 
-# RufasGate -- v 3.8.2
+# RufasGate -- v 3.9.1
 
 # Newest changes at top of list:
+
+**ver 3.9.1 -- 10may16**
+
+* using extlibs-frameworks from a pre-release SFML-v2.3.2 repository on github now elliminates a deprecation warning on OS-X.
+* now using well-tested sound code from adagate.
+* improved sounds;  more simultaneous.
+* Improved palm & grass sway in vertex shader.
+* Reduced globally allocated objects.
+* Added static sound libraries built from latest OpenAL sources on github.
+* Developed compilation scripts that now provide several good alternative versions.
+* Preferred compilation scripts use static sound libs.
+* Normalized all skybox images to 1024x1024.
+
+**ver 3.9 -- 26apr16 [not delivered]**
+
+* Updated to use newer SFML libraries (v2.3.2) and non-proprietary OGG format sounds.
+* Improved directories layout.
+* Used "ldd" and "otool" to verify linking with included local libs and frameworks to assure enhanced portability of the delivered binary executables.
+
 
 **ver 3.8.2 -- 9apr16**
 * Revised library layout and compile scripts.
@@ -37,9 +56,9 @@ Highly portable Stargate fantasy puzzle written in C++ for Mac OS-X and GNU-Linu
 
 ## what is special about this project?
 
-Uses fully modern OpenGL methods in C++ using textures, shaders and uniforms so as to achieve version 3.3 core profile contexts in a way that is sufficiently mainstream that it easily compiles and runs on both GNU/Linux and Mac OS-X systems.  This project serves as a testbed for learning the complexities of modern OpenGL and GLSL so that transparency has, to a certain extent, preempted elegance.  
+Uses fully modern OpenGL methods in C++ using textures, shaders and uniforms so as to achieve version 3.3 core profile contexts, yet easily compiles and runs on both GNU/Linux and Mac OS-X systems.  This project serves as a testbed for learning the complexities of modern OpenGL and GLSL so that transparency has, to a certain extent, preempted elegance.  
 
-Absolutely no coding efforts or compromises have been made to accomodate proprietary operating systems except for learning how to compile on OS-X.
+Absolutely no coding specializations or compromises have been made to accomodate proprietary operating systems.
 
 It relies mostly on SDL2, but uses SFML audio because of its elegant audio interface.  There are examples of "fancy" fragment shaders and an environmental cubemap for reflective water in level 2.  It is very difficult to find a complete, working OGL-330-core implementation of cubemaps, such as you find here.
 
@@ -97,18 +116,18 @@ Two [pre-compiled] binary executables are provided, one for gnu/linux and one fo
 Two build scripts are delivered:
 
 -------------------------------------------------------
-**MacOSX** => ocmp.sh:
+**MacOSX** => ocmps.sh:
 
 script for OSX that references [delivered] local copies of all nonstandard libraries in ./osxlibs/.  The intent is to allow anyone with a c++ compiler on their Mac to build without having to install these nonstandard libraries.
 
 ------------------------------------------------------
-**GNU/Linux** => scmp.sh:
+**GNU/Linux** => lcmps.sh:
 
 utilizes semi-standard shared libraries that are delivered in this bundle under ./gnulibs/, along with the non-standard static libraries SDL2 & SFML.  This was used to build the executable named rufasgate_gnu, which should run in the presence of ./gnulibs/, whether or not your system already has those libraries.  The runtime loader will prefer system libraries if they are present.
 
 The authoring build system is OpenSUSE v13.2 which uses GLIBC 2.14.  This generally means that if your linux distro uses glibc v2.14 or newer, then the prebuilt binary should probably run on your system (and be rebuildable).
 
-If the delivered linux binary does not run, rebuild using scmp.sh.
+If the delivered linux binary does not run, rebuild using lcmps.sh or lcmp.sh.
 
 
 
@@ -195,7 +214,7 @@ One used is from www.custommapmakers.org/skyboxes.php, which gathers together ma
 
 Another skybox  [from  http://www.redsorceress.com/skybox.html]  is credited to "The Mighty Pete" at http://www.petesoasis.com (which seems defunct).
 
-Another one used [from OpenGameArt.org] is the work of Heiko Irrgang <hi@93-interactive.com> and is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.  To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.  See also the accompanying file ccsa3_license.txt.
+Other beautiful hi-res skyboxes [from OpenGameArt.org] are the work of Heiko Irrgang <hi@93-interactive.com> and is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.  To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.  See also the accompanying file ccsa3_license.txt.
 
 ### LodePNG (png loader module)
 
