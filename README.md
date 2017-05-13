@@ -1,6 +1,12 @@
 # RufasGate
 Highly portable Stargate fantasy puzzle written in C++ for Mac OS-X and GNU-Linux
 
+Direct download link:
+
+https://github.com/fastrgv/RufasGate/releases/download/v3.9.2/rg13may17.tar.gz
+
+
+
 
 # RufasGate -- v 3.9.2
 
