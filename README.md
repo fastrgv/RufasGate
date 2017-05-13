@@ -2,9 +2,18 @@
 Highly portable Stargate fantasy puzzle written in C++ for Mac OS-X and GNU-Linux
 
 
-# RufasGate -- v 3.9.1
+# RufasGate -- v 3.9.2
 
 # Newest changes at top of list:
+
+
+**ver 3.9.2 -- 13may17**
+
+* added lava shriek when dying.
+* refined coding of termSnds().
+* replaced fancy ceiling frag shader (wispy clouds) in level 4 due to excessive graphical burden.
+* added missing library libcrypto...
+
 
 **ver 3.9.1 -- 10may16**
 
