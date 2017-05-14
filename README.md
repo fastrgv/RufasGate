@@ -3,7 +3,7 @@ Highly portable Stargate fantasy puzzle written in C++ for Mac OS-X and GNU-Linu
 
 Direct download link:
 
-https://github.com/fastrgv/RufasGate/releases/download/v3.9.2/rg13may17.tar.gz
+
 
 
 
@@ -13,7 +13,9 @@ https://github.com/fastrgv/RufasGate/releases/download/v3.9.2/rg13may17.tar.gz
 # Newest changes at top of list:
 
 
-**ver 3.9.2 -- 13may17**
+**ver 3.9.2 -- 14may17**
+* fixed ocean colors (bad value for twopi).
+* added missing libraries libstdc..., libcrypto...
 
 * added lava shriek when dying.
 * refined coding of termSnds().
