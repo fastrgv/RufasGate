@@ -3,17 +3,29 @@ Highly portable Stargate fantasy puzzle written in C++ for Mac OS-X and GNU-Linu
 
 Direct download link:
 
-https://github.com/fastrgv/RufasGate/releases/download/v3.9.2/rg20may17.tar.gz
 
 
 
 
-# RufasGate -- v 3.9.2
+
+# RufasGate -- v 3.9.3
 
 # Newest changes at top of list:
 
+**ver 3.9.3 -- 5jul17**
 
-**ver 3.9.2 -- 14may17**
+* Updated linux scripts to use 
+	* GNU g++ v6.3.1 (from AdaCore 2017);
+	* SFML v2.4.2, audio library rebuilt using g++ v6.3.1;  
+* Added "legacy" linux script lcmp16.sh that references earlier SFML libraries that work for GNU g++ v4.9.4 (from AdaCore 2016 and earlier);
+* Note that OS-X script, as always, uses the Xcode g++ compiler;
+* Added startup messages listing OGL profile & version;
+* Implemented a nicer conformal texture map for rocks, coconuts;
+* Improved ocean opacity using a simplified Fresnel effect.
+
+
+**ver 3.9.2 -- 14may17-20may17**
+
 * fixed ocean colors (bad value for twopi).
 * added missing libraries libstdc..., libcrypto...
 
