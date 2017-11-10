@@ -1,3 +1,5 @@
+![screenshot](https://github.com/fastrgv/RufasGate/blob/master/nightbeach.jpg)
+
 # RufasGate
 Highly portable Stargate fantasy puzzle written in C++ for Mac OS-X and GNU-Linux
 
