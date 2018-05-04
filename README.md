@@ -20,7 +20,8 @@ https://github.com/fastrgv/RufasGate/releases/download/v4.0.0/rg10nov17.tar.gz
 ## More change-history at end of file.
 
 
-
+## Note:  RufasGate is no longer under active development...
+It is an eary predecessor of AdaGate written in C++, that remains mainly to demonstrate a somewhat simpler build process that does not require Ada interfaces (bindings)...EG no OpenGL binding is required.
 
 ## RufasGate Game Description
 RufasGate is a first-person (you are the pusher) 3D sokoban puzzle game within a Stargate/Portal fantasy setting.  It now runs on Windows, OSX, and GNU/Linux.
