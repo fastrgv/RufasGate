@@ -8,27 +8,31 @@ Direct download link:
 https://github.com/fastrgv/RufasGate/releases/download/v4.0.0/rg10nov17.tar.gz
 
 
-# RufasGate -- v 4.0.0
 
-# Recent changes:
+# RufasGate
 
-**ver 4.0.0 -- 10nov17**
 
-* added prebuilt executables for msWindows;
-* added working build scripts for msWindows;
+# Most Recent Updates:
+
+**ver 4.0.1 -- 5mar19**
+
+* Repaired bad DOD default that could cause aborts;
+* Smoothed Xbox motion;
+* Adjusted movement params;
+* Improved ocean waves & foam;
+* Improved lavapool;
 
 ## More change-history at end of file.
 
 
-## Note:  RufasGate has limited support but is no longer under active development...
-It is an eary predecessor of AdaGate, but written in C++, that remains here mainly to demonstrate a somewhat simpler build process that does not require Ada interfaces (bindings)...EG no OpenGL-ada-binding is required.
+
 
 ## RufasGate Game Description
 RufasGate is a first-person (you are the pusher) 3D sokoban puzzle game within a Stargate/Portal fantasy setting.  It now runs on Windows, OSX, and GNU/Linux.
 
-While exploring a remote south-seas island you find an operational stargate that lures you into a curious sequence of dungeons. Your escape will require the logical rearrangement of weird power cells, called Zero Point Modules [ZPMs], that can roll in only two directions.
+Shipwrecked on a remote south-seas island, you find an operational stargate that sends you into a curious sequence of dungeons. Your escape will require moving weird power cells, called Zero Point Modules [ZPMs], that can roll in only two directions.
 
-Shoot your portal guns at the dungeon walls to define a wormhole escape. But, in order to activate it, all of the ZPMs must be bumped into their sockets. Now, you can only PUSH the ZPMs. That means you will fail if you roll one into a corner or against a wall.
+Shoot your portal guns at the dungeon walls to define an escape tunnel through another dimension.  But, in order to activate the portals, all of the ZPMs must be bumped onto a power socket.  And since you can only PUSH the ZPMs, you will fail if you roll one into a corner or against a wall.  So think carefully before you push.
 
 There are 4 dungeons and 5 degrees of difficulty [DoD] for a total of 20 user-replaceable puzzles to solve.  Escape all 4 levels at the current DoD to reach an exotic lake on the surface, where the DoD is increased for your next game.  Each game resumes at the DoD and level attained in the previous game.
 
@@ -66,6 +70,8 @@ Linux users should type "rufasgate_gnu" to start the game.
 Windows users type "rufasgate.exe".
 
 Similarly, OSX users may type "rufasgate_osx", or navigate to the installation directory in Finder and clicking the "rufasgate.app" icon named "rufasgate".
+
+OSX only:  an alternative executable: rgate100_osx will run more smoothly when HiDPI is enabled...it uses an ocean with more coarse gridding [ 100x100 rather than 200x200 ].
  
 
 
@@ -191,7 +197,7 @@ http://lodev.org/lodepng/
 
 ## what is special about this project?
 
-Uses fully modern OpenGL methods in C++ using textures, shaders and uniforms so as to achieve version 3.3 core profile contexts, yet easily compiles and runs on Windows, GNU/Linux and Mac OS-X systems.  This project serves as a testbed for learning the complexities of modern OpenGL and GLSL so that transparency has, to a certain extent, preempted elegance.  
+Uses fully modern OpenGL methods in C++ using textures, shaders and uniforms so as to achieve version 3.3 core profile contexts, yet compiles and runs on Windows, GNU/Linux and Mac OS-X systems.  This project serves as a testbed for learning the complexities of modern OpenGL and GLSL so that transparency has, to a certain extent, preempted elegance.  
 
 It relies mostly on SDL2, but uses SFML audio because of its elegant audio interface.  There are examples of "fancy" fragment shaders and an environmental cubemap for reflective water in level 2.  It is very difficult to find a complete, working OGL-330-core implementation of cubemaps, such as you find here.
 
@@ -200,44 +206,7 @@ It relies mostly on SDL2, but uses SFML audio because of its elegant audio inter
 
 ## Prior Change History:
 
-**ver 3.9.3 -- 5jul17**
+**ver 4.0.0 -- 10nov17**
 
-* Updated linux scripts to use 
-	* GNU g++ v6.3.1 (from AdaCore 2017);
-	* SFML v2.4.2, audio library rebuilt using g++ v6.3.1;  
-* Added "legacy" linux script lcmp16.sh that references earlier SFML libraries that work for GNU g++ v4.9.4 (from AdaCore 2016 and earlier);
-* Note that OS-X script, as always, uses the Xcode g++ compiler;
-* Added startup messages listing OGL profile & version;
-* Implemented a nicer conformal texture map for rocks, coconuts;
-* Improved ocean opacity using a simplified Fresnel effect.
-
-
-**ver 3.9.2 -- 14may17-20may17**
-
-* fixed ocean colors (bad value for twopi).
-* added missing linux libraries libstdc..., libcrypto...
-* added shriek when killed by lava.
-* refined coding of termSnds().
-* replaced fancy ceiling frag shader (wispy clouds) in level 4 due to excessive graphical burden.
-
-
-**ver 3.9.1 -- 10may16**
-
-* using extlibs-frameworks from a pre-release SFML-v2.3.2 repository on github now elliminates a deprecation warning on OS-X.
-* now using well-tested sound code from adagate.
-* improved sounds;  more simultaneous.
-* Improved palm & grass sway in vertex shader.
-* Reduced globally allocated objects.
-* Added static sound libraries built from latest OpenAL sources on github.
-* Developed compilation scripts that now provide several good alternative versions.
-* Preferred compilation scripts use static sound libs.
-* Normalized all skybox images to 1024x1024.
-
-
-
-**ver 3.9 -- 26apr16 [not delivered]**
-
-* Updated to use newer SFML libraries (v2.3.2) and non-proprietary OGG format sounds.
-* Improved directories layout.
-* Used "ldd" and "otool" to verify linking with included local libs and frameworks to assure enhanced portability of the delivered binary executables.
-
+* added prebuilt executables for msWindows;
+* added working build scripts for msWindows;
