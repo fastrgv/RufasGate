@@ -109,7 +109,7 @@ If the delivered linux binary does not run, then rebuild with lcmpd.sh.
 * OSX:  must have OpenAL.framework, which comes on v10.4 and newer
 
 
-## Open Source libraries required for building:
+## Tools required for building:
 
 * a recent gcc compiler that supports -std=c++11;
 * note that the compiler that comes with AdaCore GNAT-GPL works fine;
