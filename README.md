@@ -14,6 +14,14 @@ https://github.com/fastrgv/RufasGate/releases/download/v4.0.1/rg5mar19.7z
 
 # Most Recent Updates:
 
+**ver 4.0.2 -- 28aug19**
+
+* Updated to SFML v2.5.0;
+* Updated to SDL2 v2.0.9;
+* Moved code into ./src/;
+* Reduced island graphical burden for HiDpi [Mac];
+* Added 3 alternate build scripts that do not use GLEW lib or dll files.
+
 **ver 4.0.1 -- 5mar19**
 
 * Repaired bad DOD default that could cause aborts;
