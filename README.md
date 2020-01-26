@@ -9,26 +9,17 @@ https://github.com/fastrgv/RufasGate/releases/download/v4.0.2/rg27aug19.7z
 
 
 
+
 # RufasGate
 
 
 # Most Recent Updates:
 
-**ver 4.0.2 -- 28aug19**
 
-* Updated to SFML v2.5.0;
-* Updated to SDL2 v2.0.9;
-* Moved code into ./src/;
-* Reduced island graphical burden for HiDpi [Mac];
-* Added 3 alternate build scripts that do not use GLEW lib or dll files.
+**ver 4.1.0 -- 27jan20**
 
-**ver 4.0.1 -- 5mar19**
-
-* Repaired bad DOD default that could cause aborts;
-* Smoothed Xbox motion;
-* Adjusted movement params;
-* Improved ocean waves & foam;
-* Improved lavapool;
+* Quantum improvement in linux portability due to omission of SFML libs.  The linux build uses an alternate sound implementation that relies on an Ada package.  It is thusly, educational to see how to call Ada from C++ in such a nontrivial example, where the important goal is enhanced linux portability.
+* OSX & Windows sound still uses the proven & reliable SFML libs.
 
 ## More change-history at end of file.
 
@@ -79,8 +70,6 @@ Windows users type "rufasgate.exe".
 
 Similarly, OSX users may type "rufasgate_osx", or navigate to the installation directory in Finder and clicking the "rufasgate.app" icon named "rufasgate".
 
-OSX only:  an alternative executable: rgate100_osx will run more smoothly when HiDPI is enabled...it uses an ocean with more coarse gridding [ 100x100 rather than 200x200 ].
- 
 
 
 
@@ -102,11 +91,10 @@ build script that requires libraries included in ./libs/win/.
 script for OSX that references local copies of all nonstandard libraries in ./libs/osx/, or in ./rufasgate.app/Contents/Frameworks/.  The intent is to allow anyone with a c++ compiler on their Mac to rebuild without having to install these nonstandard libraries.
 
 ------------------------------------------------------
-**GNU/Linux** => lcmpd.sh:  
+**GNU/Linux** => lcmp1.sh, lcmp2.sh, lcmp3.sh
 
-utilizes the non-standard shared libraries that are delivered in this bundle under ./libs/gnu/.  This was used to build the executable named rufasgate_gnu, which should run in the presence of ./libs/gnu/, whether or not your system already has those libraries.
+Here, the C++ code is linked with an Ada sound package.
 
-If the delivered linux binary does not run, then rebuild with lcmpd.sh.
 
 
 
@@ -114,13 +102,11 @@ If the delivered linux binary does not run, then rebuild with lcmpd.sh.
 
 * graphics card with ample memory & updated driver that supports OpenGL version 3.3 or later;
 * Windows, GNU/Linux or OSX;
-* OSX:  must have OpenAL.framework, which comes on v10.4 and newer
 
 
 ## Tools required for building:
 
 * a recent gcc compiler that supports -std=c++11;
-* note that the compiler that comes with AdaCore GNAT-GPL works fine;
 * Xcode g++ compiler, if using OSX;
 
 
@@ -214,7 +200,27 @@ It relies mostly on SDL2, but uses SFML audio because of its elegant audio inter
 
 ## Prior Change History:
 
+
+**ver 4.0.2 -- 28aug19**
+
+* Updated to SFML v2.5.0;
+* Updated to SDL2 v2.0.9;
+* Moved code into ./src/;
+* Reduced island graphical burden for HiDpi [Mac];
+* Added 3 alternate build scripts that do not use GLEW lib or dll files.
+
+
+**ver 4.0.1 -- 5mar19**
+
+* Repaired bad DOD default that could cause aborts;
+* Smoothed Xbox motion;
+* Adjusted movement params;
+* Improved ocean waves & foam;
+* Improved lavapool;
+
+
 **ver 4.0.0 -- 10nov17**
 
 * added prebuilt executables for msWindows;
 * added working build scripts for msWindows;
+
