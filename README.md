@@ -15,6 +15,10 @@ https://github.com/fastrgv/RufasGate/releases/download/v4.1.0/rg28jan20.7z
 
 # Most Recent Updates:
 
+**ver 4.1.1 -- 17mar20**
+
+* Fixed occasional sound-task related aborts (linux version).
+
 
 **ver 4.1.0 -- 27jan20**
 
