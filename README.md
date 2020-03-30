@@ -15,6 +15,11 @@ https://github.com/fastrgv/RufasGate/releases/download/v4.1.1/rg28jan20.7z
 
 # Most Recent Updates:
 
+**ver 4.1.2 -- 31mar20**
+
+* Fixed problem with incorrect PIDs on Linux sound system.
+
+
 **ver 4.1.1 -- 17mar20**
 
 * Fixed occasional sound-task related aborts (linux version).
