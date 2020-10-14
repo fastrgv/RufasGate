@@ -10,25 +10,18 @@ https://github.com/fastrgv/RufasGate/releases/download/v4.1.2/rg31mar20.7z
 
 
 
+
 # RufasGate
 
 
 # Most Recent Updates:
 
-**ver 4.1.2 -- 31mar20**
 
-* Fixed problem with incorrect PIDs on Linux sound system.
+**ver 4.1.3 -- 15oct20**
 
+* Nice improvement of lava pool shaders.
+* Improved sdl-initialization code.
 
-**ver 4.1.1 -- 17mar20**
-
-* Fixed occasional sound-task related aborts (linux version).
-
-
-**ver 4.1.0 -- 27jan20**
-
-* Quantum improvement in linux portability due to omission of SFML libs.  The linux build uses an alternate sound implementation that relies on an Ada package.  It is thusly, educational to see how to call Ada from C++ in such a nontrivial example, where the important goal is enhanced linux portability.
-* OSX & Windows sound still uses the proven & reliable SFML libs.
 
 ## More change-history at end of file.
 
@@ -36,11 +29,11 @@ https://github.com/fastrgv/RufasGate/releases/download/v4.1.2/rg31mar20.7z
 
 
 ## RufasGate Game Description
-RufasGate is a first-person (you are the pusher) 3D sokoban puzzle game within a Stargate/Portal fantasy setting.  It now runs on Windows, OSX, and GNU/Linux.
+RufasGate is a first-person (you are the pusher) 3D sokoban puzzle game within a Stargate/Portal fantasy setting.  It now runs on Windows, OSX, and GNU/Linux -- most all linux distros.
 
 Shipwrecked on a remote south-seas island, you find an operational stargate that sends you into a curious sequence of dungeons. Your escape will require moving weird power cells, called Zero Point Modules [ZPMs], that can roll in only two directions.
 
-Shoot your portal guns at the dungeon walls to define an escape tunnel through another dimension.  But, in order to activate the portals, all of the ZPMs must be bumped onto a power socket.  And since you can only PUSH the ZPMs, you will fail if you roll one into a corner or against a wall.  So think carefully before you push.
+Shoot your portal guns at the dungeon walls to define two ends of an escape tunnel through another dimension.  But, in order to activate the portals, all of the ZPMs must be bumped onto a power socket.  And since you can only PUSH the ZPMs, you will fail if you roll one into a corner or against a wall.  So think carefully before you push.
 
 There are 4 dungeons and 5 degrees of difficulty [DoD] for a total of 20 user-replaceable puzzles to solve.  Escape all 4 levels at the current DoD to reach an exotic lake on the surface, where the DoD is increased for your next game.  Each game resumes at the DoD and level attained in the previous game.
 
@@ -63,8 +56,7 @@ L-Mouse, R-Mouse : shoot the two portal-guns
 
 (esc)-key = exit;  
 
-at the command line type "rufasgate (enter)"
-If you ever get stuck inside a short wall, simply jump forward.
+If you get stuck inside a short wall, simply jump forward.
 
 ------------------------------------------------------------
 
@@ -85,9 +77,9 @@ Similarly, OSX users may type "rufasgate_osx", or navigate to the installation d
 
 ## Build instructions for RufasGate:
 
-Three [pre-compiled] binary executables are provided, one for Windows, one for gnu/linux and one for OS-X.  The linux binary, rufasgate_gnu, is intended to run in the presence of the directory "./libs/gnu/", which contains some shared libraries that can be, but need not be present on a target system:  GLEW, SDL2, SFML.
+Three [pre-compiled] binary executables are provided, one for Windows, one for gnu/linux and one for OS-X.  The linux binary, rufasgate_gnu, runs on most linux distros. So you typically do not need to rebuild the apps.
 
-Three build scripts are delivered:
+If you are a developer and want to rebuild, then use one of the following three build scripts:
 
 -------------------------------------------------------
 **msWin32** => wcmp.bat
@@ -127,7 +119,7 @@ Here, the C++ code is linked with an Ada sound package.
 RufasGate itself is covered by the GNU GPL v3 as indicated in the sources:
 
 
- Copyright (C) 2017  <fastrgv@gmail.com>
+ Copyright (C) 2020  <fastrgv@gmail.com>
 
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -208,6 +200,22 @@ It relies mostly on SDL2, but uses SFML audio because of its elegant audio inter
 -------------------------------------------------------------------
 
 ## Prior Change History:
+
+**ver 4.1.2 -- 31mar20**
+
+* Fixed problem with incorrect PIDs on Linux sound system.
+
+
+**ver 4.1.1 -- 28jan20**
+
+* Fixed occasional sound-task related aborts (linux version).
+
+
+
+**ver 4.1.0 -- 26jan20**
+
+* Quantum improvement in linux portability due to omission of SFML libs.  The linux build uses an alternate sound implementation that relies on an Ada package.  It is thusly, educational to see how to call Ada from C++ in such a nontrivial example, where the important goal is enhanced linux portability.
+* OSX & Windows sound still uses the proven & reliable SFML libs.
 
 
 **ver 4.0.2 -- 28aug19**
