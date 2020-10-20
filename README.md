@@ -16,6 +16,11 @@ https://github.com/fastrgv/RufasGate/releases/download/v4.1.3/rg15oct20.7z
 
 # Most Recent Updates:
 
+**ver 4.2.0 -- 21oct20**
+
+* Converted to all c++ sound system on linux;
+* Simplified linux build process.
+
 
 **ver 4.1.3 -- 15oct20**
 
