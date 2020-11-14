@@ -16,14 +16,19 @@ https://github.com/fastrgv/RufasGate/releases/download/v4.2.0/rg21oct20.7z
 
 # Most Recent Updates:
 
-**ver 4.2.0 -- 21oct20**
+**ver 4.2.1 -- 14nov20**
+* updated SDL2 libs to v2.0.12, if possible.
+* delayed premature music.
+* OSX rebuild was done at low Dpi due to jerkiness.
+* moved string manipulation code outside of threads.
 
+
+**ver 4.2.0 -- 21oct20**
 * Converted to all c++ sound system on linux;
 * Simplified linux build process.
 
 
 **ver 4.1.3 -- 15oct20**
-
 * Nice improvement of lava pool shaders.
 * Improved sdl-initialization code.
 
@@ -92,7 +97,7 @@ If you are a developer and want to rebuild, then use one of the following three 
 build script that requires libraries included in ./libs/win/.
 
 -------------------------------------------------------
-**MacOSX** => ocmpss.sh:
+**MacOSX** => ocmp.sh:
 
 script for OSX that references local copies of all nonstandard libraries in ./libs/osx/, or in ./rufasgate.app/Contents/Frameworks/.  The intent is to allow anyone with a c++ compiler on their Mac to rebuild without having to install these nonstandard libraries.
 
