@@ -16,6 +16,14 @@ https://github.com/fastrgv/RufasGate/releases/download/v4.2.1/rg14nov20.7z
 
 # Most Recent Updates:
 
+
+**ver 5.0.0 -- 17nov2020**
+* All new sound system using Pthreads and OpenAL.
+* Runs using Pthreads on Windows, OSX, Linux.
+* Sound code is now identical for all 3 platforms.
+* Completely elliminated SFML-audio (Windows & OSX).
+
+
 **ver 4.2.1 -- 14nov20**
 * updated SDL2 libs to v2.0.12, if possible.
 * delayed premature music.
