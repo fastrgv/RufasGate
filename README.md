@@ -81,7 +81,10 @@ If you get stuck inside a short wall, simply jump forward.
 
 ## Running rufasgate:
 
-Unzip the archive, open a commandline terminal, and cd to the install directory.
+Unzip the archive, The proper command to extract the archive and maintain the directory structure is "7z x filename".
+
+
+open a commandline terminal, and cd to the install directory.
 
 Linux users should type "rufasgate_gnu" to start the game.
 
