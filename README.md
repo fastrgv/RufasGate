@@ -81,21 +81,30 @@ If you get stuck inside a short wall, simply jump forward.
 
 ## Running rufasgate:
 
-Unzip the archive, The proper command to extract the archive and maintain the directory structure is "7z x filename".
+Unzip the archive, The proper command to extract the archive and maintain the directory structure is 
+ * 7z x filename
 
 
-open a commandline terminal, and cd to the install directory.
+Open a commandline terminal, and cd to the install directory.
 
-Linux users should type "rufasgate_gnu" to start the game. 
-Note that you can also run the windows version on linux if you have wine thusly:
+Linux users should type 
+ * rufasgate_gnu 
+ 
+to start the game. Note that you can also run the windows version on linux if you have wine thusly:
   * wine rufasgate.exe
 
 
 
 
-Windows users type "rufasgate.exe".
+Windows users type 
 
-Similarly, OSX users may type "rufasgate_osx", or navigate to the installation directory in Finder and clicking the "rufasgate.app" icon named "rufasgate".
+ * rufasgate.exe
+
+Similarly, OSX users may type 
+
+ * rufasgate_osx 
+
+or navigate to the installation directory in Finder and clicking the "rufasgate.app" icon named "rufasgate".
 
 
 
