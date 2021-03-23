@@ -82,7 +82,7 @@ If you get stuck inside a short wall, simply jump forward.
 ## Running rufasgate:
 
 Unzip the archive, The proper command to extract the archive and maintain the directory structure is 
- * 7z x filename
+ * 7z x filename.7z
 
 
 Open a commandline terminal, and cd to the install directory.
