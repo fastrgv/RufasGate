@@ -86,7 +86,12 @@ Unzip the archive, The proper command to extract the archive and maintain the di
 
 open a commandline terminal, and cd to the install directory.
 
-Linux users should type "rufasgate_gnu" to start the game.
+Linux users should type "rufasgate_gnu" to start the game. 
+Note that you can also run the windows version on linux if you have wine thusly:
+  * wine rufasgate.exe
+
+
+
 
 Windows users type "rufasgate.exe".
 
