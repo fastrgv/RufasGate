@@ -16,6 +16,15 @@ https://github.com/fastrgv/RufasGate/releases/download/v5.0.0/rg21nov20.7z
 
 # Most Recent Updates:
 
+**ver 5.0.2 -- 27apr22**
+* Replaced cc-by-nc-licensed sound file due to incompatibility with GPLv3.
+* Updated lodepng & snd4cpp utilities.
+* There is now both a 32-bit, and a 64-bit Windows build.
+* Moved windows DLLs + EXEs to ./binw32/ or ./binw64/ to reduce clutter.
+
+**ver 5.0.1 -- 21nov20**
+* Improved robustness of sound code;
+
 
 **ver 5.0.0 -- 17nov2020**
 * All new sound system using Pthreads and OpenAL.
